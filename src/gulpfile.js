@@ -12,7 +12,6 @@ async function compileSassCompressed() {
         .src('scss/app.scss')
         .pipe(sass({
             outputStyle: 'compress',
-            filename: 'qwe.min.css'
         }).on('error', sass.logError))
         .pipe(gulp.dest('../dist/assets/css'))
 }
@@ -22,7 +21,6 @@ async function compileSassCompacted() {
         .src('scss/app.scss')
         .pipe(sass({
             outputStyle: 'compact',
-            filename: 'asd.css'
         }).on('error', sass.logError))
         .pipe(gulp.dest('../dist/assets/css'))
 }

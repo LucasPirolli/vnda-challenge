@@ -1,10 +1,11 @@
-@import 'fonts';
-@import 'variables';
-@import 'resets';
-
+@import '_fonts';
+@import '_variables';
+@import '_resets';
 
 body {
-  font-family: $text-font;
+  font-family: $heading-font;
+  background: $colorfundo;
+  color: $colorrr;
 }
 
 
