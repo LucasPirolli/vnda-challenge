@@ -1,5 +1,16 @@
-$text-font: 'Playfair Display', serif;
-$heading-font: 'PT Sans', sans-serif;
-$colorfundo: yellow;
-$colorrr: pink;
+// Fonts
+$text-font: "Playfair Display", serif;
+$heading-font: "PT Sans", sans-serif;
 
+// Colors
+$text-color: #121212ff;
+$icon-color: #121212ff;
+$white: #eaede4ff;
+$cta-color: #5f5f5fff;
+$barn-red: #84bb07ff;
+$maximum-green-2: #628c45ff;
+$cultured: #bdbdbdff;
+
+// Breakpoints
+$mobile: "max-width: 767px";
+$desktop: "min-width: 1024px";

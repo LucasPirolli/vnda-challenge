@@ -1,12 +1,12 @@
-@import '_fonts';
-@import '_variables';
-@import '_resets';
+@import 'fonts';
+@import 'variables';
+@import 'resets';
+@import 'commons';
+@import 'components/header';
 
-body {
-  font-family: $heading-font;
-  background: $colorfundo;
-  color: $colorrr;
-}
+
+
+
 
 
 
