@@ -1,14 +1,8 @@
-# :computer: Projeto
+# :computer: Front-End Challenge
 
-Descrição
-
-    Aplicativo responsivo para o controle de tarefas pessoal.
+Descrição:
+Site responsivo de e-commerce
 ---
-
-## :dart: Objetivo do projeto
-
-Objetivo
-Controle de tarefas (TodoList).
 
 ## Tecnologias utilizadas
 
@@ -21,6 +15,9 @@ Controle de tarefas (TodoList).
 
 - [Swiper](https://swiperjs.com)
 
+## CDN utilizado
+
+- [Font Awesome](https://fontawesome.com/icons)
 
 ## :arrow_forward: Rodar o projeto
 
