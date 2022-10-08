@@ -27,7 +27,7 @@ Site responsivo de e-commerce
     ```
 - Instale as dependências do package.json
     ```sh
-    $ yarn install
+    $ npm install
     ```
    ou:
     ```sh
