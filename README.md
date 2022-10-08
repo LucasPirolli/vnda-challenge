@@ -23,22 +23,14 @@ Site responsivo de e-commerce
 
 - Clone o repositório em sua máquina:
     ```sh
-    $ git clone git@github.com:vinicius-rech/react-typescript.git
+    $ git clone git@github.com:LucasPirolli/vnda-challenge.git
     ```
 - Instale as dependências do package.json
     ```sh
     $ npm install
     ```
-   ou:
-    ```sh
-    $ yarn
-    ```
 - Para watch dev:
     ```sh
-    $ # yarn dev
-    ```
-- Para watch dev em LAN:
-    ```sh
-    $ # yarn dev --host
+    $ # gulp watch
     ```
 ---
