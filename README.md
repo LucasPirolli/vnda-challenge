@@ -31,6 +31,6 @@ Site responsivo de e-commerce
     ```
 - Para watch dev:
     ```sh
-    $ # gulp watch
+    $ gulp watch
     ```
 ---
