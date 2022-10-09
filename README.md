@@ -6,17 +6,14 @@ Site responsivo de e-commerce
 
 ## Tecnologias utilizadas
 
-- [HTML5](#)
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics)
 - [SASS](https://sass-lang.com)
 - [JavaScript](https://www.javascript.com)
 - [Gulp](https://gulpjs.com)
 
-## Plugins utilizados
+## CDN'S utilizados
 
 - [Swiper](https://swiperjs.com)
-
-## CDN utilizado
-
 - [Font Awesome](https://fontawesome.com/icons)
 
 ## :arrow_forward: Rodar o projeto
@@ -31,6 +28,13 @@ Site responsivo de e-commerce
     ```
 - Para watch dev:
     ```sh
-    $ gulp watch
+    $ gulp
     ```
----
+- Para compactar o SASS:
+    ```sh
+    $ gulp compact
+    ```
+ - Para comprimir o SASS:
+    ```sh
+    $ gulp compressed
+    ```
