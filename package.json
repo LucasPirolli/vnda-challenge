@@ -1,0 +1,22 @@
+{
+  "name": "frontend-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/js/index.js",
+  "scripts": {
+    "build": "gulp compileSass",
+    "watch": "gulp"
+  },
+  "author": "Lucas Pirolli",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.3",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0"
+  }
+}

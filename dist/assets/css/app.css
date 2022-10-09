@@ -1,1 +1,109 @@
-@import"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap";@import"https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap";*{margin:0;padding:0;box-sizing:border-box}html{font-size:16px}a{text-decoration:none}.flex-justify-between-center,.page-header>.container>.groupIcon{display:flex;justify-content:space-between;align-items:center}.page-header{transition:height .4s linear;background-color:#fff;align-items:center;max-height:100px;position:-webkit-sticky;position:sticky;height:100px;display:flex;width:100vw;top:0}.page-header.isActive{border-bottom:solid .5px rgba(51,51,51,.1254901961);height:80px}.page-header>.container{justify-content:space-between;max-width:90vw;margin:0 auto;display:flex;width:100%}.page-header>.container>.logo{font-family:"PT Sans",sans-serif;position:relative;max-height:100px;max-width:200px;font-size:2rem;height:auto;width:100%}.page-header>.container>.logo span{color:#628c45}.page-header>.container>.logo::before{background-color:#628c45;transform:translateY(-50%);position:absolute;height:100%;content:"";left:-10px;width:2px;top:50%}.page-header>.container>.navbar{justify-content:center;align-items:center;-moz-column-gap:15px;column-gap:15px;display:flex;width:100%}.page-header>.container>.navbar>.link{transition:border-bottom .1s ease-in-out;font-family:"PT Sans",sans-serif;color:#121212;font-size:1rem}.page-header>.container>.navbar>.link:hover{border-bottom:solid 2px green}.page-header>.container>.groupIcon{justify-content:flex-end;-moz-column-gap:15px;column-gap:15px;max-width:200px;width:100%}.page-header>.container>.groupIcon>.icon{cursor:pointer;font-size:1rem}/*# sourceMappingURL=app.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { font-size: 16px; }
+
+body { max-width: 100vw; overflow-x: hidden; }
+
+a { text-decoration: none; }
+
+.flex-justify-between-center, .page-header > .container > .groupIcon { display: flex; justify-content: space-between; align-items: center; }
+
+.h2-title, .depositions > .title { font-family: "PT Sans", sans-serif; font-size: 2rem; }
+
+.page-header { transition: height 0.4s linear; background-color: #eaede4ff; align-items: center; max-height: 100px; position: sticky; height: 100px; display: flex; width: calc(100vw -100px); top: 0; }
+
+.page-header.isActive { border-bottom: solid 0.5px #33333320; height: 80px; }
+
+.page-header > .container { justify-content: space-between; max-width: 90vw; margin: 0 auto; display: flex; width: 100%; }
+
+.page-header > .container > .logo { font-family: "PT Sans", sans-serif; position: relative; max-height: 100px; max-width: 200px; font-size: 2rem; cursor: pointer; height: auto; width: 100%; }
+
+.page-header > .container > .logo span { color: #628c45ff; }
+
+.page-header > .container > .logo::before { background-color: #628c45ff; transform: translateY(-50%); position: absolute; height: 100%; content: ""; left: -10px; width: 2px; top: 50%; }
+
+.page-header > .container > .navbar { justify-content: center; align-items: center; column-gap: 15px; display: flex; width: 100%; }
+
+.page-header > .container > .navbar > .link { transition: border-bottom 0.1s ease-in-out; font-family: "PT Sans", sans-serif; color: #121212ff; font-size: 1rem; }
+
+.page-header > .container > .navbar > .link:hover { border-bottom: solid 2px green; }
+
+.page-header > .container > .groupIcon { justify-content: flex-end; column-gap: 15px; max-width: 200px; width: 100%; }
+
+.page-header > .container > .groupIcon > .icon { cursor: pointer; font-size: 1rem; }
+
+.group-banner { justify-content: center; flex-direction: column; align-items: center; cursor: pointer; display: flex; }
+
+.group-banner > .container { position: relative; overflow: hidden; width: 100%; }
+
+.group-banner > .container > .swiper-wrapper { max-height: 492px; display: flex; width: 100%; }
+
+.group-banner > .container > .swiper-wrapper > .swiper-slide { display: block; }
+
+.group-banner > .container > .swiper-wrapper > .swiper-slide > .image { object-fit: cover; display: block; height: auto; width: 100%; }
+
+.group-banner > .swiper-controls { align-items: center; position: relative; margin-top: 1rem; display: flex; width: 150px; height: 44px; }
+
+.group-banner > .swiper-controls .swiper-button-prev, .group-banner > .swiper-controls .swiper-button-next { transition: 0.4s linear; z-index: 20; }
+
+.group-banner > .swiper-controls .swiper-button-prev::after, .group-banner > .swiper-controls .swiper-button-next::after { font-size: 1.5rem; color: red; }
+
+.group-banner > .swiper-controls .swiper-pagination { position: initial; }
+
+.group-banner > .swiper-controls .swiper-pagination-bullet { border: solid 1px #333333; background-color: #ffffff; transition: 0.2s linear; }
+
+.group-banner > .swiper-controls .swiper-pagination-bullet-active { border: solid 1px #33333370; background-color: #eaede4ff; transform: scale(1.5); }
+
+.depositions { display: flex; flex-direction: column; align-items: center; max-width: 100vw; }
+
+.depositions > .title { padding-top: 25px; color: #302a2a; }
+
+.depositions > .container { display: flex; justify-content: center; gap: 40px; justify-items: center; margin-top: 40px; margin-bottom: 40px; flex-wrap: wrap; }
+
+.depositions > .container > .image { display: block; object-fit: cover; border-radius: 50%; max-width: 150px; height: auto; }
+
+.products-categories { padding: 40px 7px 0 40px; max-width: 100vw; position: relative; }
+
+.products-categories:before { z-index: -1; content: ""; background-color: #e2dcdc; position: absolute; width: 100vw; top: 0; left: 0; height: 60%; }
+
+.products-categories > .container { display: grid; grid-template-columns: 4.8fr 7.2fr; max-width: 100vw; }
+
+@media (max-width: 767px) { .products-categories > .container { grid-template-columns: 1fr; } }
+
+.products-categories > .container > .description { display: flex; flex-direction: column; padding-right: 85px; text-align: left; }
+
+@media (max-width: 767px) { .products-categories > .container > .description { padding-right: initial; } }
+
+.products-categories > .container > .description > .call { padding-bottom: 14px; font-size: 0.7rem; font-family: "PT Sans", sans-serif; }
+
+@media (max-width: 767px) { .products-categories > .container > .description > .call { text-align: center; } }
+
+.products-categories > .container > .description > .title { padding-bottom: 20px; font-family: "PT Sans", sans-serif; }
+
+@media (max-width: 767px) { .products-categories > .container > .description > .title { text-align: center; } }
+
+.products-categories > .container > .description > .text { font-family: "Playfair Display", serif; font-size: 0.8rem; }
+
+@media (max-width: 767px) { .products-categories > .container > .description > .text { text-align: center; } }
+
+.products-categories > .container > .gallery { display: grid; grid-template-columns: 1fr 1fr; justify-content: space-between; gap: 8px; }
+
+@media (max-width: 767px) { .products-categories > .container > .gallery { margin-top: 20px; } }
+
+.products-categories > .container > .gallery > .singleImage { padding-top: 40px; }
+
+.products-categories > .container > .gallery > .singleImage > .figure { display: flex; flex-direction: column; }
+
+.products-categories > .container > .gallery > .singleImage > .figure > .image { display: block; object-fit: cover; width: 100%; height: 230px; }
+
+.products-categories > .container > .gallery > .singleImage > .figure > .caption { display: flex; flex-direction: column; align-items: center; background-color: #dbcdcd; padding: 20px; }
+
+.products-categories > .container > .gallery > .doubleImage > .figure { display: flex; flex-direction: column; }
+
+.products-categories > .container > .gallery > .doubleImage > .figure > .image { display: block; object-fit: cover; width: 100%; height: 230px; }
+
+.products-categories > .container > .gallery > .doubleImage > .figure > .image-small { display: block; object-fit: cover; width: 100%; height: 150px; }
+
+.products-categories > .container > .gallery > .doubleImage > .figure > .caption { display: flex; flex-direction: column; align-items: center; background-color: #dbcdcd; padding: 20px; margin-bottom: 8px; }

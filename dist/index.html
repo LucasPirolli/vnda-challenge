@@ -6,8 +6,17 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/28334e214c.js"
       crossorigin="anonymous"
@@ -33,6 +42,124 @@
       </div>
     </header>
 
-    <script type="module" src="assets/js/pageFooter.js"></script>
+    <section class="group-banner">
+      <div class="mainBanner container">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide">
+            <img
+              class="image"
+              src="assets/images/banner/banner-1.jpg"
+              alt="b1"
+            />
+          </article>
+          <article class="swiper-slide">
+            <img
+              class="image"
+              src="assets/images/banner/banner-2.jpg"
+              alt="b1"
+            />
+          </article>
+          <article class="swiper-slide">
+            <img
+              class="image"
+              src="assets/images/banner/banner-3.jpg"
+              alt="b1"
+            />
+          </article>
+        </div>
+      </div>
+      <div class="swiper-controls">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <div class="depositions">
+      <h2 class="title">Principais influenciadores</h2>
+      <div class="container">
+        <img
+          class="image"
+          src="assets/images/random-persons/p-1.jpg"
+          alt="p1"
+        />
+        <img
+          class="image"
+          src="assets/images/random-persons/p-2.jpg"
+          alt="p1"
+        />
+        <img
+          class="image"
+          src="assets/images/random-persons/p-3.jpg"
+          alt="p1"
+        />
+        <img
+          class="image"
+          src="assets/images/random-persons/p-4.jpg"
+          alt="p1"
+        />
+        <img
+          class="image"
+          src="assets/images/random-persons/p-5.jpg"
+          alt="p1"
+        />
+        <img
+          class="image"
+          src="assets/images/random-persons/p-6.jpg"
+          alt="p1"
+        />
+      </div>
+    </div>
+
+    <section class="products-categories">
+      <div class="container">
+        <section class="description">
+          <h3 class="call">Lorem ipsum lorem dolor</h3>
+          <h2 class="title">Lorem ipsum dolor sit amet</h2>
+          <p class="text">
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Metus vulputate
+            eu scelerisque felis imperdiet proin fermentum. Praesent semper
+            feugiat nibh sed pulvinar proin gravida.>
+          </p>
+        </section>
+
+        <section class="gallery">
+          <div class="singleImage">
+            <figure class="figure">
+              <img
+                class="image"
+                src="assets/images/random-persons/p-6.jpg"
+                alt=""
+              />
+              <figcaption class="caption"><strong>Titulo</strong>Lorem ipsum dolor</figcaption>
+            </figure>
+          </div>
+
+          <div class="doubleImage">
+            <figure class="figure">
+              <img
+                class="image-small"
+                src="assets/images/random-persons/p-6.jpg"
+                alt=""
+              />
+              <figcaption class="caption"><strong>Titulo</strong>Lorem ipsum dolor</figcaption>
+            </figure>
+
+            <figure class="figure">
+              <img
+                class="image"
+                src="assets/images/random-persons/p-6.jpg"
+                alt=""
+              />
+              <figcaption class="caption"><strong>Titulo</strong>Lorem ipsum dolor</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../src/js/pageFooter.js"></script>
   </body>
 </html>
