@@ -1,0 +1,27 @@
+.depositions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  > .title {
+    @extend .h2-title;
+    padding-top: 25px;
+    color: #302a2a;
+  }
+  > .container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    justify-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    > .image {
+      display: block;
+      object-fit: cover;
+      border-radius: 50%;
+      max-width: 150px;
+      height: auto;
+    }
+  }
+}

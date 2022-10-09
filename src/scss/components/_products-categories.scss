@@ -1,0 +1,109 @@
+.products-categories {
+  padding: 40px 7px 0 40px;
+  max-width: 100vw;
+  position: relative;
+  &:before {
+    z-index: -1;
+    content: "";
+    background-color: #e2dcdc;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 60%;
+  }
+  > .container {
+    display: grid;
+    grid-template-columns: 4.8fr 7.2fr;
+    @media ($mobile) {
+      grid-template-columns: 1fr;
+    }
+    max-width: 100vw;
+    > .description {
+      display: flex;
+      flex-direction: column;
+      padding-right: 85px;
+      text-align: left;
+      @media ($mobile) {
+        padding-right: initial;
+      }
+      > .call {
+        padding-bottom: 14px;
+        font-size: 0.7rem;
+        font-family: $heading-font;
+        @media ($mobile) {
+          text-align: center;
+        }
+      }
+      > .title {
+        padding-bottom: 20px;
+        font-family: $heading-font;
+        @media ($mobile) {
+          text-align: center;
+        }
+      }
+      > .text {
+        font-family: $text-font;
+        font-size: 0.8rem;
+        @media ($mobile) {
+          text-align: center;
+        }
+      }
+    }
+    > .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+      gap: 8px;
+      @media ($mobile) {
+        margin-top: 20px;
+      }
+      > .singleImage {
+        padding-top: 40px;
+        > .figure {
+          display: flex;
+          flex-direction: column;
+          > .image {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: 230px;
+          }
+          > .caption {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #dbcdcd;
+            padding: 20px;
+          }
+        }
+      }
+      > .doubleImage {
+        > .figure {
+          display: flex;
+          flex-direction: column;
+          > .image {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: 230px;
+            &-small {
+              display: block;
+              object-fit: cover;
+              width: 100%;
+              height: 150px;
+            }
+          }
+          > .caption {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #dbcdcd;
+            padding: 20px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+}

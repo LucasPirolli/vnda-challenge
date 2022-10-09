@@ -1,0 +1,56 @@
+.group-banner {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  > .container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    > .swiper-wrapper {
+      max-height: 492px;
+      display: flex;
+      width: 100%;
+      > .swiper-slide {
+        display: block;
+        > .image {
+          object-fit: cover;
+          display: block;
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+  > .swiper-controls {
+    align-items: center;
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    width: 150px;
+    height: 44px;
+    .swiper-button-prev,
+    .swiper-button-next {
+      transition: 0.4s linear;
+      z-index: 20;
+      &::after {
+        font-size: 1.5rem;
+        color: red;
+      }
+    }
+    .swiper-pagination {
+      position: initial;
+      &-bullet {
+        border: solid 1px #333333;
+        background-color: #ffffff;
+        transition: 0.2s linear;
+        &-active {
+          border: solid 1px #33333370;
+          background-color: $white;
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+}
