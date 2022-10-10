@@ -7,7 +7,9 @@
   position: sticky;
   height: 100px;
   display: flex;
+  width: 100vw;
   top: 0;
+  z-index: 50;
   &.isActive {
     border-bottom: solid 0.5px #33333320;
     height: 80px;
@@ -28,10 +30,10 @@
       height: auto;
       width: 100%;
       span {
-        color: $maximum-green-2;
+        color: $main-green;
       }
       &::before {
-        background-color: $maximum-green-2;
+        background-color: $main-green;
         transform: translateY(-50%);
         position: absolute;
         height: 100%;

@@ -11,6 +11,15 @@ const mainBanner = new Swiper(".mainBanner", {
   },
 });
 
+const highlightGallery = new Swiper(".highlight > .gallery", {
+  direction: "horizontal",
+  slidesPerView: "auto",
+  navigation: {
+    nextEl: ".gallery-swiper-button-next",
+    prevEl: ".gallery-swiper-button-prev",
+  },
+});
+
 const resizeMenu = () => {
   return window.addEventListener("scroll", () => {
     const navbar = document.querySelector(".page-header");

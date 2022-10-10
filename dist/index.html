@@ -6,8 +6,19 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" type="text/css" href="assets/css/app.css" />
     <link
       rel="stylesheet"
@@ -44,14 +55,14 @@
 
     <section class="group-banner">
       <div class="mainBanner container">
-        <div class="swiper-wrapper">
-          <article class="swiper-slide">
+        <section class="swiper-wrapper">
+          <span class="swiper-slide">
             <img
               class="image"
               src="assets/images/banner/banner-1.jpg"
               alt="b1"
             />
-          </article>
+          </span>
           <article class="swiper-slide">
             <img
               class="image"
@@ -66,19 +77,19 @@
               alt="b1"
             />
           </article>
-        </div>
+        </section>
       </div>
-      <div class="swiper-controls">
+      <section class="swiper-controls">
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
-      </div>
+      </section>
     </section>
 
-    <div class="depositions">
+    <section class="depositions">
       <h2 class="title">Principais influenciadores</h2>
       <div class="container">
-        <div class="first-deposition">
+        <figure class="first-deposition">
           <img
             class="image"
             src="assets/images/random-persons/p-1.png"
@@ -87,9 +98,9 @@
           <figcaption class="caption-depositions">
             <strong>Renato Cariani</strong>
           </figcaption>
-        </div>
+        </figure>
 
-        <div class="second-deposition">
+        <figure class="second-deposition">
           <img
             class="image"
             src="assets/images/random-persons/p-1.png"
@@ -98,8 +109,7 @@
           <figcaption class="caption-depositions">
             <strong>Renato Cariani</strong>
           </figcaption>
-        </div>
-
+        </figure>
         <div class="third-deposition">
           <img
             class="image"
@@ -111,7 +121,7 @@
           </figcaption>
         </div>
 
-        <div class="fourth-deposition">
+        <figure class="fourth-deposition">
           <img
             class="image"
             src="assets/images/random-persons/p-1.png"
@@ -120,9 +130,9 @@
           <figcaption class="caption-depositions">
             <strong>Renato Cariani</strong>
           </figcaption>
-        </div>
+        </figure>
 
-        <div class="fifth-deposition">
+        <figure class="fifth-deposition">
           <img
             class="image"
             src="assets/images/random-persons/p-1.png"
@@ -131,9 +141,9 @@
           <figcaption class="caption-depositions">
             <strong>Renato Cariani</strong>
           </figcaption>
-        </div>
+        </figure>
 
-        <div class="sixth-deposition">
+        <figure class="sixth-deposition">
           <img
             class="image"
             src="assets/images/random-persons/p-1.png"
@@ -142,9 +152,9 @@
           <figcaption class="caption-depositions">
             <strong>Renato Cariani</strong>
           </figcaption>
-        </div>
+        </figure>
       </div>
-    </div>
+    </section>
 
     <section class="products-categories">
       <div class="container">
@@ -182,19 +192,75 @@
                 alt=""
               />
               <figcaption class="caption">
-                <strong>Titulo</strong>Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempo.
+                <strong>Titulo</strong>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempo.
               </figcaption>
             </figure>
 
             <figure class="figure">
               <img class="image" src="assets/images/places/fight.jpg" alt="" />
               <figcaption class="caption">
-                <strong>Titulo</strong>Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempo.
+                <strong>Titulo</strong>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempo.
               </figcaption>
             </figure>
           </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="highlight">
+      <div class="container">
+        <section class="details">
+          <img
+            class="image"
+            src="assets/images/products/shop-seller.png"
+            alt=""
+          />
+          <div class="resume">
+            <h3 class="call">Lorem ipsum lorem dolor</h3>
+            <h2 class="title">Lorem ipsum dolor sit amet</h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus
+              vulputate eu scelerisque felis imperdiet proin fermentum. Praesent
+              semper feugiat nibh sed pulvinar proin gravida.
+            </p>
+            <a href="#/" class="cta">Ver mais</a>
+          </div>
+
+        </section>
+        
+        <section class="gallery container">
+            <section class="swiper-wrapper">
+              <article class="swiper-slide">
+                <img
+                  class="image"
+                  src="assets/images/products/product-bcaa.png"
+                  alt="b1"
+                />
+              </article>
+              <article class="swiper-slide"> 
+                <img
+                  class="image"
+                  src="assets/images/products/product-amino.png"
+                  alt="b1"
+                />
+              </article>
+              <article class="swiper-slide">
+                <img
+                  class="image"
+                  src="assets/images/products/product-hmb.png"
+                  alt="b1"
+                />
+              </article>
+            </section>
+          <section class="swiper-controls">
+            <div class="gallery-swiper-button-prev"></div>
+            <div class="gallery-swiper-button-next"></div>
+          </section>
         </section>
       </div>
     </section>
