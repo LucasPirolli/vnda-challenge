@@ -1,27 +1,75 @@
 .depositions {
-  display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 100vw;
+  display: flex;
   > .title {
     @extend .h2-title;
     padding-top: 25px;
     color: #302a2a;
   }
   > .container {
-    display: flex;
     justify-content: center;
-    gap: 40px;
     justify-items: center;
-    margin-top: 40px;
     margin-bottom: 40px;
+    margin-top: 40px;
     flex-wrap: wrap;
+    display: flex;
+    gap: 40px;
     > .image {
-      display: block;
-      object-fit: cover;
       border-radius: 50%;
+      object-fit: cover;
       max-width: 150px;
-      height: auto;
+      max-height: 150px;
+      display: block;
+    }
+    > .first-deposition {
+      > .image {
+        @extend .image-properties;
+      }
+      > .caption-depositions{
+        @extend .caption-depositions-properties;
+      }
+    }
+    > .second-deposition {
+      > .image {
+        @extend .image-properties;
+      }
+      > .caption-depositions {
+        @extend .caption-depositions-properties;
+      }
+    }
+    > .third-deposition {
+      > .image {
+        @extend .image-properties;
+      }
+      > .caption-depositions {
+        @extend .caption-depositions-properties;
+      }
+    }
+    > .fourth-deposition {
+      > .image {
+        @extend .image-properties;
+      }
+      > .caption-depositions {
+        @extend .caption-depositions-properties;
+      }
+    }
+    > .fifth-deposition {
+      > .image {
+        @extend .image-properties;
+      }
+      > .caption-depositions {
+        @extend .caption-depositions-properties;
+      }
+    }
+    > .sixth-deposition {
+      > .image {
+        @extend .image-properties;
+      }
+      > .caption-depositions {
+        @extend .caption-depositions-properties;
+      }
     }
   }
 }

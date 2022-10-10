@@ -1,12 +1,12 @@
 .page-header {
+  background-color: $header-color;
   transition: height 0.4s linear;
-  background-color: $white;
+  width: calc(100vw -100px);
   align-items: center;
   max-height: 100px;
   position: sticky;
   height: 100px;
   display: flex;
-  width: calc(100vw -100px);
   top: 0;
   &.isActive {
     border-bottom: solid 0.5px #33333320;
