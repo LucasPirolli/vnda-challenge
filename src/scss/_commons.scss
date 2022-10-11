@@ -1,7 +1,7 @@
 .flex-justify-between-center {
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  display: flex;
 }
 
 .h2-title {
@@ -20,4 +20,51 @@
   font-family: $heading-font;
   text-align: center;
   margin-top: 5px;
+}
+
+.caption-products-categories-properties {
+  background-color: $caption-color;
+  border-radius: 0 0 15px 15px;
+  font-family: $text-font;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1rem;
+  display: flex;
+  padding: 20px;
+}
+
+.product-categories-image {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+}
+
+.main-box-shadow {
+  box-shadow: rgba(50, 53, 57, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.divider {
+  align-items: center;
+  position: relative;
+  column-gap: 7px;  
+  margin: 2rem 0;
+  display: flex;
+  width: 100%;
+  > hr {
+    width: 100%;
+  }
+  > .logo {
+    display: flex;
+    column-gap: 3px;
+    font-family: $heading-font;
+    position: relative;
+    height: auto;
+    font-size: 1.4rem;
+    cursor: pointer;
+    height: auto;
+    span {
+      color: $main-blue;
+    }
+  }
 }

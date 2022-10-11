@@ -11,13 +11,10 @@ const mainBanner = new Swiper(".mainBanner", {
   },
 });
 
-const highlightGallery = new Swiper(".highlight > .gallery", {
+const highlightGallery = new Swiper(".highlight .gallery", {
   direction: "horizontal",
   slidesPerView: "auto",
-  navigation: {
-    nextEl: ".gallery-swiper-button-next",
-    prevEl: ".gallery-swiper-button-prev",
-  },
+  autoplay: true,
 });
 
 const resizeMenu = () => {
@@ -31,4 +28,5 @@ const resizeMenu = () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   resizeMenu();
+  AOS.init({ once: true, anchorPlacement: "top" });
 });

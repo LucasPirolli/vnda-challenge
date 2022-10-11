@@ -24,6 +24,7 @@
     }
   }
   > .swiper-controls {
+    transition: 0.4s linear;
     align-items: center;
     position: relative;
     margin-top: 1rem;
@@ -32,10 +33,9 @@
     height: 44px;
     .swiper-button-prev,
     .swiper-button-next {
-      transition: 0.4s linear;
       z-index: 20;
       &::after {
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: $black;
       }
     }

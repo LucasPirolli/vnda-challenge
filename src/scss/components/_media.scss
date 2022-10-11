@@ -1,0 +1,58 @@
+.media {
+  flex-direction: column;
+  margin-bottom: 60px;
+  align-items: center;
+  display: flex;
+  > .title {
+    font-family: $heading-font;
+    text-align: center;
+    font-size: 2rem;
+  }
+  > .container {
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    max-width: 90%;
+    display: grid;
+    gap: 25px;
+    @media($mobile) {
+      margin-top: 350px;
+    }
+    > .figure:nth-child(2) {
+      margin-top: 3rem;
+    }
+    > .figure {
+      position: relative;
+      overflow: hidden;
+      &:hover > .caption {
+        background-color: #000000;
+        visibility: visible;
+        cursor: pointer;
+        color: $white;
+      }
+      > .image {
+        object-fit: cover;
+        min-width: 400px;
+        height: 100%;
+        width: 100%;
+      }
+      > .caption {
+        background-color: transparent;
+        transition: all .4s linear;
+        justify-content: center;
+        font-family: $text-font;
+        align-items: center;
+        visibility: hidden;
+        position: absolute;
+        color: transparent;
+        display: flex;
+        padding: 20px;
+        color: #fff;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}

@@ -28,27 +28,32 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://kit.fontawesome.com/28334e214c.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <title>Front-End Challange Vnda</title>
   </head>
-  <body>
+  <body id="home">
     <header class="page-header">
       <div class="container">
         <h1 class="logo">Healthy <span>Shop</span></h1>
         <nav class="navbar">
-          <a href="#" class="link">Home</a>
-          <a href="#" class="link">Produtos</a>
-          <a href="#" class="link">Serviços</a>
-          <a href="#" class="link">Sobre</a>
-          <a href="#" class="link">Contato</a>
+          <a href="#home" class="link">Home</a>
+          <a href="#influencers" class="link">Influenciadores</a>
+          <a href="#products-categories" class="link">Produtos</a>
+          <a href="#highlight" class="link">Lançamentos</a>
+          <a href="#media" class="link">Media</a>
+          <a href="#sobre" class="link">Sobre</a>
         </nav>
         <div class="groupIcon">
-          <i class="icon fa fa-search"></i>
-          <i class="icon fa fa-user"></i>
-          <i class="icon fa fa-basket-shopping"></i>
+          <div class="container">
+            <i class="icon fa fa-search"></i>
+            <i class="icon fa fa-user"></i>
+            <i class="icon fa fa-basket-shopping"></i>
+          </div>
         </div>
       </div>
     </header>
@@ -56,13 +61,13 @@
     <section class="group-banner">
       <div class="mainBanner container">
         <section class="swiper-wrapper">
-          <span class="swiper-slide">
+          <article class="swiper-slide">
             <img
               class="image"
               src="assets/images/banner/banner-1.jpg"
               alt="b1"
             />
-          </span>
+          </article>
           <article class="swiper-slide">
             <img
               class="image"
@@ -86,124 +91,131 @@
       </section>
     </section>
 
-    <section class="depositions">
+    <section id="influencers" class="depositions">
       <h2 class="title">Principais influenciadores</h2>
       <div class="container">
-        <figure class="first-deposition">
+        <figure class="deposition" data-aos="fade-up">
           <img
             class="image"
             src="assets/images/random-persons/p-1.png"
-            alt="p1"
+            alt="Rude-Boy"
           />
-          <figcaption class="caption-depositions">
-            <strong>Renato Cariani</strong>
+          <figcaption class="name">
+            <strong>Rude Boy</strong>
           </figcaption>
         </figure>
 
-        <figure class="second-deposition">
+        <figure class="deposition" data-aos="fade-up" data-aos="fade-up">
           <img
             class="image"
-            src="assets/images/random-persons/p-1.png"
-            alt="p2"
+            src="assets/images/random-persons/p-4.png"
+            alt="Pacholok"
           />
-          <figcaption class="caption-depositions">
-            <strong>Renato Cariani</strong>
+          <figcaption class="name">
+            <strong>Fabrício Pacholok</strong>
           </figcaption>
         </figure>
-        <div class="third-deposition">
+        <div class="deposition" data-aos="fade-up">
           <img
             class="image"
-            src="assets/images/random-persons/p-1.png"
-            alt="p5"
+            src="assets/images/random-persons/p-2.jpg"
+            alt="Arnold"
           />
-          <figcaption class="caption-depositions">
-            <strong>Renato Cariani</strong>
+          <figcaption class="name">
+            <strong>Arnold Schwarzenegger</strong>
           </figcaption>
         </div>
 
-        <figure class="fourth-deposition">
+        <figure class="deposition" data-aos="fade-up">
           <img
             class="image"
-            src="assets/images/random-persons/p-1.png"
-            alt="p4"
+            src="assets/images/random-persons/p-5.png"
+            alt="Falcao"
           />
-          <figcaption class="caption-depositions">
+          <figcaption class="name">
+            <strong>Cezar Bittencourt</strong>
+          </figcaption>
+        </figure>
+
+        <figure class="deposition" data-aos="fade-up">
+          <img
+            class="image"
+            src="assets/images/random-persons/p-3.jpg"
+            alt="Cariani"
+          />
+          <figcaption class="name">
             <strong>Renato Cariani</strong>
           </figcaption>
         </figure>
 
-        <figure class="fifth-deposition">
+        <figure class="deposition" data-aos="fade-up">
           <img
             class="image"
-            src="assets/images/random-persons/p-1.png"
-            alt="p3"
+            src="assets/images/random-persons/p-6.png"
+            alt="Júlia"
           />
-          <figcaption class="caption-depositions">
-            <strong>Renato Cariani</strong>
-          </figcaption>
-        </figure>
-
-        <figure class="sixth-deposition">
-          <img
-            class="image"
-            src="assets/images/random-persons/p-1.png"
-            alt="p6"
-          />
-          <figcaption class="caption-depositions">
-            <strong>Renato Cariani</strong>
+          <figcaption class="name">
+            <strong>Júlia Chitarra</strong>
           </figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="products-categories">
+    <section id="products-categories" class="products-categories">
       <div class="container">
         <section class="description">
-          <h3 class="call">Lorem ipsum lorem dolor</h3>
-          <h2 class="title">Lorem ipsum dolor sit amet</h2>
-          <p class="text">
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Metus vulputate
-            eu scelerisque felis imperdiet proin fermentum. Praesent semper
-            feugiat nibh sed pulvinar proin gravida.>
+          <h3 class="call" data-aos="fade-right">
+            Conheça as melhores áreas!!!
+          </h3>
+          <h2 class="title" data-aos="fade-right">
+            Temos o suplemento certo para seu esporte:
+          </h2>
+          <p class="text" data-aos="fade-right">
+            A importância da atividade física é fundamental em qualquer idade e
+            é um dos meios de cuidar da saúde e ter uma melhor qualidade de
+            vida. Com isso a <strong>Healthy Shop</strong> trouxe as melhores
+            áreas e os melhores suplementos para você!
           </p>
         </section>
 
         <section class="gallery">
-          <div class="singleImage">
-            <figure class="figure">
+          <div class="leftSide">
+            <figure class="figure" data-aos="fade-left">
               <img
-                class="image"
+                class="image-large"
                 src="assets/images/places/running.png"
                 alt=""
               />
               <figcaption class="caption">
-                <strong>Titulo</strong>Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempo.
+                <strong>CORRIDA</strong>
+                Suplementos ideais para seu aeróbico
               </figcaption>
             </figure>
           </div>
 
-          <div class="doubleImage">
-            <figure class="figure">
+          <div class="rightSide">
+            <figure class="figure" data-aos="fade-right">
               <img
                 class="image-small"
                 src="assets/images/places/workout.jpg"
                 alt=""
               />
               <figcaption class="caption">
-                <strong>Titulo</strong>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempo.
+                <strong>Musculação</strong>
+                Os suplementos mais procurados para completar a rotina de
+                treinos.
               </figcaption>
             </figure>
 
-            <figure class="figure">
-              <img class="image" src="assets/images/places/fight.jpg" alt="" />
+            <figure class="figure" data-aos="fade-right">
+              <img
+                class="image-large"
+                src="assets/images/places/fight.jpg"
+                alt=""
+              />
               <figcaption class="caption">
-                <strong>Titulo</strong>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempo.
+                <strong>Muay Thai</strong>
+                Suplementos ideais para seu treino diário.
               </figcaption>
             </figure>
           </div>
@@ -211,59 +223,149 @@
       </div>
     </section>
 
-    <section class="highlight">
+    <section id="highlight" class="highlight">
       <div class="container">
-        <section class="details">
+        <section class="details" data-aos="fade-right">
           <img
             class="image"
             src="assets/images/products/shop-seller.png"
             alt=""
           />
           <div class="resume">
-            <h3 class="call">Lorem ipsum lorem dolor</h3>
-            <h2 class="title">Lorem ipsum dolor sit amet</h2>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus
-              vulputate eu scelerisque felis imperdiet proin fermentum. Praesent
-              semper feugiat nibh sed pulvinar proin gravida.
+            <h3 class="call" data-aos="fade-right" data-aos-delay="150">
+              Liquidação!!!
+            </h3>
+            <h2 class="title" data-aos="fade-right" data-aos-delay="180">
+              Suplementos a partir de R$ 19,80*
+            </h2>
+            <p class="description" data-aos="fade-right" data-aos-delay="200">
+              Quer economizar e ter produtos de ótima qualidade? Então aproveite
+              a nossa promoção. Na compra destes produtos você ganha descontos
+              incríveis e um cupom para concorrer a futuros sorteios!
             </p>
-            <a href="#/" class="cta">Ver mais</a>
+            <a href="#" class="cta">Ver mais</a>
           </div>
-
         </section>
-        
+
         <section class="gallery container">
-            <section class="swiper-wrapper">
-              <article class="swiper-slide">
-                <img
-                  class="image"
-                  src="assets/images/products/product-bcaa.png"
-                  alt="b1"
-                />
-              </article>
-              <article class="swiper-slide"> 
-                <img
-                  class="image"
-                  src="assets/images/products/product-amino.png"
-                  alt="b1"
-                />
-              </article>
-              <article class="swiper-slide">
-                <img
-                  class="image"
-                  src="assets/images/products/product-hmb.png"
-                  alt="b1"
-                />
-              </article>
-            </section>
-          <section class="swiper-controls">
-            <div class="gallery-swiper-button-prev"></div>
-            <div class="gallery-swiper-button-next"></div>
+          <section class="swiper-wrapper">
+            <article class="swiper-slide">
+              <img
+                class="image"
+                src="assets/images/products/product-bcaa.png"
+                alt="b1"
+              />
+            </article>
+            <article class="swiper-slide">
+              <img
+                class="image"
+                src="assets/images/products/product-amino.png"
+                alt="b1"
+              />
+            </article>
+            <article class="swiper-slide">
+              <img
+                class="image"
+                src="assets/images/products/product-hmb.png"
+                alt="b1"
+              />
+            </article>
+            <article class="swiper-slide">
+              <img
+                class="image"
+                src="assets/images/products/product-betaalanina.png"
+                alt="b1"
+              />
+            </article>
+            <article class="swiper-slide">
+              <img
+                class="image"
+                src="assets/images/products/product-whey.png"
+                alt="b1"
+              />
+            </article>
+            <article class="swiper-slide">
+              <img
+                class="image"
+                src="assets/images/products/product-creatina.png"
+                alt="b1"
+              />
+            </article>
           </section>
         </section>
       </div>
     </section>
+
+    <section id="media" class="media">
+      <h2 class="title">@healthyshop</h2>
+      <div class="container">
+        <figure class="figure">
+          <img class="image" src="assets/images/commercial/ramon.png" alt="" />
+          <figcaption class="caption">
+            Foco no processo! Sem dor, sem ganho.
+          </figcaption>
+        </figure>
+        <figure class="figure">
+          <img class="image" src="assets/images/commercial/gym.jpeg" alt="" />
+          <figcaption class="caption">
+            O sucesso nem sempre tem a ver com grandeza. É uma questão de
+            consistência. O trabalho árduo consistente obtém sucesso. A grandeza
+            virá.
+          </figcaption>
+        </figure>
+        <figure class="figure">
+          <img class="image" src="assets/images/commercial/ff.png" alt="" />
+          <figcaption class="caption">
+            Nunca desista de um sonho só por causa do tempo que levará para
+            realizá-lo. O tempo vai passar de qualquer maneira...
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="divider">
+      <hr />
+      <h2 class="logo">Healthy <span>Shop</span></h2>
+      <hr />
+    </div>
+
+    <footer id="sobre" class="page-footer">
+      <div class="container">
+        <div class="navigation">
+          <h4 class="title">Menu</h4>
+          <div class="nav">
+            <a href="#/">Plataforma</a>
+            <a href="#/">Contato</a>
+            <a href="#/">Blog</a>
+            <a href="#/">Ajuda</a>
+          </div>
+        </div>
+        <div class="newsletter">
+          <h4 class="title">Receba ofertas</h4>
+          <form class="form">
+            <input
+              placeholder="Digite seu email"
+              class="textfield"
+              type="email"
+            />
+            <button class="button" type="submit">Enviar</button>
+          </form>
+        </div>
+        <div class="socialMedias">
+          <h4 class="title">Sociais</h4>
+          <div class="groupIconsSocial">
+            <a class="icon" href="#">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a class="icon" href="#"
+              ><i class="fa-brands fa-facebook"></i><span>Facebook</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <section class="copyright" name="copyright">© 2022, HealthyShop - Lucas Pirolli</section>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../src/js/pageFooter.js"></script>

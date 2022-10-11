@@ -1,0 +1,99 @@
+.page-footer {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  display: flex;
+  width: 100vw;
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    max-width: 85%;
+    display: grid;
+    width: 100%;
+    .navigation {
+      width: 100%;
+      > .title {
+        font-family: $heading-font;
+        padding-bottom: 15px;
+        justify-self: start;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: normal;
+      }
+      > .nav {
+        grid-template-columns: 1fr 1fr;
+        font-family: $text-font;
+        gap: 10px 5px;
+        display: grid;
+      }
+    }
+    .newsletter {
+      width: 100%;
+      justify-items: start;
+      display: grid;
+      > .title {
+        font-family: $heading-font;
+        padding-bottom: 15px;
+        justify-self: start;
+        font-size: 1.2rem;
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+      > .form {
+        align-items: center;
+        display: flex;
+        width: 100%;
+        gap: 5px;
+        > .textfield {
+          font-family: $heading-font;
+          border-radius: 6px;
+          height: 30px;
+          width: 100%;
+          border: 1px solid #000000;
+        }
+        > .button {
+          padding-left: 8px;
+          padding-right: 8px;
+          border-radius: 6px;
+          background-color: $black;
+          border: 0;
+          color: $white;
+          cursor: pointer;
+          height: 30px;
+        }
+      }
+    }
+    .socialMedias {
+      display: grid;
+      width: 100%;
+      > .title {
+        justify-self: end;
+        font-weight: normal;
+        font-family: $heading-font;
+        padding-bottom: 15px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+      .groupIconsSocial {
+        justify-content: end;
+        display: grid;
+        gap: 10px;
+        > .icon {
+          font-family: $text-font;
+          text-align: center;
+          column-gap: 3px;
+          color: $black;
+          display: flex;
+          span {
+            transform: translateY(-15%);
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    font-family: $text-font;
+    font-size: .8rem;
+    padding:15px 0;
+  }
+}

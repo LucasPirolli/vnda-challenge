@@ -10,65 +10,38 @@
   }
   > .container {
     justify-content: center;
-    justify-items: center;
     margin-bottom: 40px;
     margin-top: 40px;
     flex-wrap: wrap;
     display: flex;
     gap: 40px;
-    > .image {
-      border-radius: 50%;
-      object-fit: cover;
-      max-width: 150px;
-      max-height: 150px;
-      display: block;
-    }
-    > .first-deposition {
+    > .deposition {
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      display: flex;
+      &:hover > .name {
+        background-color: transparent;
+        border: 1px solid #1547b460;
+      }
       > .image {
-        @extend .image-properties;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        width: 125px;
+        height: 125px;
       }
-      > .caption-depositions{
-        @extend .caption-depositions-properties;
-      }
-    }
-    > .second-deposition {
-      > .image {
-        @extend .image-properties;
-      }
-      > .caption-depositions {
-        @extend .caption-depositions-properties;
-      }
-    }
-    > .third-deposition {
-      > .image {
-        @extend .image-properties;
-      }
-      > .caption-depositions {
-        @extend .caption-depositions-properties;
-      }
-    }
-    > .fourth-deposition {
-      > .image {
-        @extend .image-properties;
-      }
-      > .caption-depositions {
-        @extend .caption-depositions-properties;
-      }
-    }
-    > .fifth-deposition {
-      > .image {
-        @extend .image-properties;
-      }
-      > .caption-depositions {
-        @extend .caption-depositions-properties;
-      }
-    }
-    > .sixth-deposition {
-      > .image {
-        @extend .image-properties;
-      }
-      > .caption-depositions {
-        @extend .caption-depositions-properties;
+      .name {
+        transition: background-color 0.2s linear;
+        border: 1px solid transparent;
+        background-color: #1547b460;
+        font-family: $heading-font;
+        flex-direction: column;
+        border-radius: 9px;
+        font-size: 0.8rem;
+        margin-top: 9px;
+        display: flex;
+        padding: 6px;
       }
     }
   }

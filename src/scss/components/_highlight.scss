@@ -1,70 +1,95 @@
 .highlight {
-  width: 100vw;
-  max-width: 100vw;
+  margin-bottom: 60px;
   position: relative;
-  display: grid;
+  user-select: none;
+  max-width: 100vw;
   padding: 5vw 0;
+  display: grid;
+  width: 100%;
+  @media ($mobile) {
+    grid-template-columns: 1fr;
+  }
   &::before {
-    content: "";
-    width: 90vw;
-    height: 100%;
-    background-color: #33333333;
+    background-color: #f3eded;
+    @extend .main-box-shadow;
     position: absolute;
-    top: 0;
+    height: 100%;
+    width: 90vw;
+    content: "";
     left: 0;
+    top: 0;
+    border-radius: 0 8px 8px 0;
+    @media($mobile) {
+
+    }
   }
   > .container {
-    max-width: 90vw;
-    max-height: 400px;
-    z-index: 1;
-    justify-self: center;
-    display: grid;
     grid-template-columns: 7.2fr 4.8fr;
-
+    justify-self: center;
+    max-height: 400px;
+    max-width: 90vw;
+    display: grid;
+    z-index: 1;
+    @media($mobile) {
+      grid-template-columns: 1fr;
+    }
     > .details {
-      display: grid;
       grid-template-columns: 1fr 1fr;
+      display: grid;
       gap: 2rem;
+      @media ($mobile) {
+        margin-bottom: 2rem;
+      }
       > .image {
+        border-radius: 25px;
+        object-fit: cover;
+        max-height: 400px;
+        min-height: 100%;
         display: flex;
         width: 100%;
-        max-height: 400px;
-        object-fit: cover;
-        border-radius: 25px;
       }
       > .resume {
+        max-height: 400px;
         display: grid;
         width: 100%;
-        max-height: 400px;
         > .call {
           font-family: $heading-font;
-          padding-bottom: 2rem;
+          background-color: red;
+          justify-content: center;
+          border-radius: 10px;
+          align-items: center;
+          align-self: start;
+          font-size: 1rem;
+          display: flex;
+          color: $white;
+          height: 0.5rem;
+          padding: 1rem;
+          width: 45%;
         }
         > .title {
-          font-size: 3rem;
-          max-width: 70%;
-          padding-bottom: 2rem;
           font-family: $heading-font;
+          font-size: 1.4rem;
+          max-width: 70%;
         }
         > .description {
-          padding-bottom: 2rem;
           font-family: $text-font;
-          max-width: 70%;
           align-self: center;
+          max-width: 85%;
         }
         > .cta {
+          font-family: $heading-font;
+          background-color: $black;
+          transition: 0.2s ease-in;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          font-size: 1.3rem;
           align-self: end;
           display: flex;
-          width: 60%;
-          background-color: $black;
           color: $white;
-          padding: 7px;
-          font-size: 1.3rem;
           height: 3rem;
-          align-items: center;
-          justify-content: center;
-          font-family: $heading-font;
-          transition: 0.2s ease-in;
+          padding: 4px;
+          width: 60%;
           &:hover {
             background-color: transparent;
             border: solid 1px #333333;
@@ -75,55 +100,43 @@
     }
     > .gallery {
       &.container {
+        position: relative;
         overflow: hidden;
         height: 400px;
-        position: relative; 
         > .swiper-controls {
-            z-index: 20;
+          transform: translateX(-50%);
           align-items: center;
           position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
           margin-top: 1rem;
           display: flex;
           width: 150px;
           height: 44px;
-          .gallery-swiper-button-prev,
-          .gallery-swiper-button-next {
+          z-index: 20;
+          bottom: 0;
+          left: 50%;
+          .swiper-button-prev,
+          .swiper-button-next {
             transition: 0.4s linear;
-            z-index: 20;f
-            &::after {
-              font-size: 1.5rem;
-              color: $white;
-            }
-          }
-          .swiper-pagination {
-            position: initial;
             z-index: 20;
-            &-bullet {
-              border: solid 1px #333333;
-              background-color: #ffffff;
-              transition: 0.2s linear;
-              &-active {
-                border: solid 1px #33333370;
-                background-color: $white;
-                transform: scale(1.5);
-              }
+            &::after {
+              font-size: 1rem;
+              color: $black;
             }
           }
         }
       }
       > .swiper-wrapper {
-        width: 100%;
+        cursor: pointer;
         margin: 0 auto;
+        width: 100%;
         > .swiper-slide {
-          display: flex;
+          background-color: $white;
+          border: 1px solid #00000030;
           justify-content: center;
           align-items: center;
+          border-radius: 8px;
+          display: flex;
           height: 100%;
-          border-radius: 25px;
-          background-color: #333333;
           > .image {
             object-fit: contain;
             display: block;
