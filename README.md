@@ -15,6 +15,7 @@ Site responsivo de e-commerce
 
 - [Swiper](https://swiperjs.com)
 - [Font Awesome](https://fontawesome.com/icons)
+- [AOS](https://michalsnik.github.io/aos/)
 
 ## :arrow_forward: Rodar o projeto
 
