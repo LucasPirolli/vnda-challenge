@@ -26,7 +26,31 @@ const resizeMenu = () => {
   });
 };
 
+const toggleMenu = (menu) => {
+  const menuButton = document.querySelector(".fa-bars");
+  const navigation = document.querySelector(".page-header>.container>.navbar");
+  const groupIcons = document.querySelector(".page-header>.container>.groupIcons");
+  const closeButton = document.querySelector(".fa.fa-square-xmark");
+
+  const toggle = () => {
+    menu.classList.toggle("isActive");
+    navigation.classList.toggle("isActive");
+    closeButton.classList.toggle("isActive");
+    menuButton.classList.toggle("isActive");
+    groupIcons.classList.toggle("isActive");
+  };
+  menuButton.addEventListener("click", () => toggle());
+  closeButton.addEventListener("click", () => toggle());
+};
+
+const mobileMenu = () => {
+  const menu = document.querySelector(".page-header>.container");
+  toggleMenu(menu);
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   resizeMenu();
+  toggleMenu();
+  mobileMenu();
   AOS.init({ once: true, anchorPlacement: "top" });
 });

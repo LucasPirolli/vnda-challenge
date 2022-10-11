@@ -10,6 +10,7 @@
     grid-template-columns: 1fr;
   }
   &::before {
+    border-radius: 0 8px 8px 0;
     background-color: #f3eded;
     @extend .main-box-shadow;
     position: absolute;
@@ -18,9 +19,8 @@
     content: "";
     left: 0;
     top: 0;
-    border-radius: 0 8px 8px 0;
-    @media($mobile) {
-
+    @media ($mobile) {
+      width: 100vw;
     }
   }
   > .container {
@@ -30,14 +30,16 @@
     max-width: 90vw;
     display: grid;
     z-index: 1;
-    @media($mobile) {
+    @media ($mobile) {
       grid-template-columns: 1fr;
+      max-height: initial;
     }
     > .details {
       grid-template-columns: 1fr 1fr;
       display: grid;
       gap: 2rem;
       @media ($mobile) {
+        grid-template-columns: 1fr;
         margin-bottom: 2rem;
       }
       > .image {
@@ -52,6 +54,9 @@
         max-height: 400px;
         display: grid;
         width: 100%;
+        @media ($mobile) {
+          justify-items: center;
+        }
         > .call {
           font-family: $heading-font;
           background-color: red;
@@ -60,21 +65,29 @@
           align-items: center;
           align-self: start;
           font-size: 1rem;
-          display: flex;
-          color: $white;
           height: 0.5rem;
           padding: 1rem;
+          display: flex;
+          color: $white;
           width: 45%;
         }
         > .title {
           font-family: $heading-font;
-          font-size: 1.4rem;
+          font-size: 2rem;
           max-width: 70%;
+          @media ($mobile) {
+            text-align: center;
+            margin-top: 15px;
+          }
         }
         > .description {
           font-family: $text-font;
           align-self: center;
           max-width: 85%;
+          @media ($mobile) {
+            font-size: 0.7rem;
+            margin: 15px 0;
+          }
         }
         > .cta {
           font-family: $heading-font;

@@ -4,40 +4,64 @@
   margin-top: 60px;
   display: flex;
   width: 100vw;
+  @media ($mobile) {
+    margin-top: 10px;
+  }
   .container {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     max-width: 85%;
     display: grid;
     width: 100%;
+    @media ($mobile) {
+      grid-template-columns: 1fr;
+    }
     .navigation {
       width: 100%;
       > .title {
         font-family: $heading-font;
+        text-transform: uppercase;
         padding-bottom: 15px;
         justify-self: start;
-        font-size: 1.5rem;
-        text-transform: uppercase;
         font-weight: normal;
+        font-size: 1.5rem;
+        @media($mobile) {
+          text-align: center;
+        }
       }
       > .nav {
         grid-template-columns: 1fr 1fr;
         font-family: $text-font;
-        gap: 10px 5px;
+        flex-direction: column;
+        transition: 10s linear;
+        align-items: center;
+        gap: 10px;
         display: grid;
+        > a {
+          color: $black;
+          &:hover{
+            color: $main-blue;
+          }
+        }
+        @media ($mobile) {
+          display: flex;
+        }
       }
     }
     .newsletter {
-      width: 100%;
       justify-items: start;
       display: grid;
+      width: 100%;
+      @media ($mobile) {
+        margin-top: 30px;
+      }
       > .title {
         font-family: $heading-font;
+        text-transform: uppercase;
         padding-bottom: 15px;
         justify-self: start;
-        font-size: 1.2rem;
         font-weight: normal;
-        text-transform: uppercase;
+        font-size: 1.2rem;
       }
       > .form {
         align-items: center;
@@ -45,38 +69,49 @@
         width: 100%;
         gap: 5px;
         > .textfield {
+          border: 1px solid #000000;
           font-family: $heading-font;
           border-radius: 6px;
+          padding: 10px;
           height: 30px;
           width: 100%;
-          border: 1px solid #000000;
         }
         > .button {
-          padding-left: 8px;
+          background-color: $black;
           padding-right: 8px;
           border-radius: 6px;
-          background-color: $black;
-          border: 0;
-          color: $white;
+          padding-left: 8px;
           cursor: pointer;
+          color: $white;
           height: 30px;
+          border: 0;
         }
       }
     }
     .socialMedias {
       display: grid;
       width: 100%;
+      @media ($mobile) {
+        margin-top: 30px;
+      }
       > .title {
-        justify-self: end;
-        font-weight: normal;
         font-family: $heading-font;
-        padding-bottom: 15px;
-        font-size: 1.2rem;
         text-transform: uppercase;
+        padding-bottom: 15px;
+        font-weight: normal;
+        font-size: 1.2rem;
+        justify-self: end;
+        @media ($mobile) {
+          justify-self: center;
+        }
       }
       .groupIconsSocial {
         justify-content: end;
         display: grid;
+        @media ($mobile) {
+          justify-content: center;
+          display: flex;
+        }
         gap: 10px;
         > .icon {
           font-family: $text-font;
@@ -86,6 +121,9 @@
           display: flex;
           span {
             transform: translateY(-15%);
+            &:hover{
+              color: $main-blue;
+            }
           }
         }
       }
@@ -93,7 +131,7 @@
   }
   .copyright {
     font-family: $text-font;
-    font-size: .8rem;
-    padding:15px 0;
+    font-size: 0.8rem;
+    padding: 15px 0;
   }
 }

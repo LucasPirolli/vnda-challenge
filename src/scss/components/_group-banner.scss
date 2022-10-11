@@ -19,6 +19,9 @@
           display: block;
           height: auto;
           width: 100%;
+          @media ($mobile) {
+            height: 150px;
+          }
         }
       }
     }
@@ -42,11 +45,11 @@
     .swiper-pagination {
       position: initial;
       &-bullet {
-        border: solid 1px #333333;
+        border: 1px solid #333333;
         background-color: #ffffff;
         transition: 0.2s linear;
         &-active {
-          border: solid 1px #33333370;
+          border: 1px solid #33333370;
           background-color: $white;
           transform: scale(1.5);
         }
