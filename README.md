@@ -29,7 +29,7 @@ Site responsivo de e-commerce
     ```
 - Para watch dev:
     ```sh
-    $ gulp
+    $ npm run watch
     ```
 - Para compactar o SASS:
     ```sh
